@@ -1,18 +1,21 @@
 {
-    "version": 2,
-    "routes": [
-      {
-        "src": "/cuponera/(.*)",
-        "dest": "/cuponera/$1"
-      },
-      {
-        "src": "/fc/(.*)",
-        "dest": "/fc/$1"
-      },
-      {
-        "src": "/login/(.*)",
-        "dest": "/login/$1"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/login/index.html"
+    },
+    {
+      "src": "/cuponera/(.*)",
+      "dest": "/cuponera/$1"
+    },
+    {
+      "src": "/fc/(.*)",
+      "dest": "/fc/$1"
+    },
+    {
+      "src": "/login/(.*)",
+      "dest": "/login/$1"
+    }
+  ]
+}
