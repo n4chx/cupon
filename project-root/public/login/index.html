@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    
+    <title>Login</title>
+</head>
+<body>
+    <img src="img/animated.gif" alt="Animated GIF" class="animated-gif">
+    <div class="login-container oscillate">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Spotify Player</title>
+    <style>
+        .spotify-player {
+            position: absolute;
+            top: 45%;
+            left: 10%;
+            width: 300px; /* Ajusta el ancho */
+            height: 80px; /* Ajusta la altura */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .spotify-player iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="spotify-player">
+        <iframe src="https://open.spotify.com/embed/track/5eo5uGyM4q70CLU3LZphfu" frameborder="0" allowtransparency="true" allow="encrypted-media" allow="autoplay"></iframe>
+    </div>
+</body>
+</html>
